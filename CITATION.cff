@@ -2,8 +2,22 @@ cff-version: 1.2.0
 message: "If you use this code or derived source data, please cite the archived release and the associated manuscript."
 title: "Gastric epithelial composition-aware transcriptomics: code and source data"
 type: software
-version: 1.0.0
-date-released: 2026-07-29
+version: "1.0.0"
+date-released: "2026-07-29"
+doi: "10.5281/zenodo.21677618"
+
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.21677617"
+    description: "Concept DOI representing all versions of this software release."
+  - type: doi
+    value: "10.5281/zenodo.21677618"
+    description: "Archived snapshot of version 1.0.0."
+
+repository-code: "https://github.com/jjy0208/gastric-epithelial-composition-transcriptomics"
+url: "https://doi.org/10.5281/zenodo.21677618"
+license: MIT
+
 authors:
   - family-names: "Jia"
     given-names: "Junyi"
@@ -19,14 +33,17 @@ authors:
     given-names: "Changlong"
     orcid: "https://orcid.org/0009-0001-6553-4711"
     email: "965084451@qq.com"
+
 keywords:
   - gastric cancer
   - bulk transcriptomics
   - single-cell RNA sequencing
   - tissue composition
+  - gene-expression module
   - GEO
-abstract: >-
-  Reproducible R code, processed matrices, statistical outputs and figure
-  source data for a composition-aware reanalysis of paired gastric cancer
-  transcriptomic cohorts.
+  - reproducible research
 
+abstract: >-
+  Reproducible R code, processed gene-expression matrices, statistical outputs
+  and figure source data supporting a composition-aware reanalysis of paired
+  gastric cancer transcriptomic cohorts.
