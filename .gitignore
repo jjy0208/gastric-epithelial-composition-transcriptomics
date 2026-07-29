@@ -1,0 +1,15 @@
+# Local and temporary files
+.Rhistory
+.RData
+.Rproj.user/
+*.tmp
+*.bak
+~$*
+
+# Large third-party inputs and regenerable caches
+raw_data/
+results/PPI/string_cache/
+
+# Local manuscript render QA
+report/manuscript/_qa_render*/
+

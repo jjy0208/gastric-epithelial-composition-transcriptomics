@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use this code or derived source data, please cite the archived release and the associated manuscript."
+title: "Gastric epithelial composition-aware transcriptomics: code and source data"
+type: software
+version: 1.0.0
+date-released: 2026-07-29
+authors:
+  - family-names: "Jia"
+    given-names: "Junyi"
+    orcid: "https://orcid.org/0009-0002-0277-8521"
+  - family-names: "Zhu"
+    given-names: "Mingming"
+  - family-names: "Zhang"
+    given-names: "Mingxiong"
+    orcid: "https://orcid.org/0000-0002-8673-6507"
+  - family-names: "Luan"
+    given-names: "Likun"
+  - family-names: "Yang"
+    given-names: "Changlong"
+    orcid: "https://orcid.org/0009-0001-6553-4711"
+    email: "965084451@qq.com"
+keywords:
+  - gastric cancer
+  - bulk transcriptomics
+  - single-cell RNA sequencing
+  - tissue composition
+  - GEO
+abstract: >-
+  Reproducible R code, processed matrices, statistical outputs and figure
+  source data for a composition-aware reanalysis of paired gastric cancer
+  transcriptomic cohorts.
+
