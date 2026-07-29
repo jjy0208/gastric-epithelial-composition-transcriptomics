@@ -1,0 +1,26 @@
+id,description,observed,expected,pass,evidence
+A01,Discovery significant DEG count,122,122,TRUE,results/DEG/GSE29272_DEG_summary.csv
+A02,Discovery up/down counts,47/75,47/75,TRUE,results/DEG/GSE29272_DEG_summary.csv
+A03,Candidate intersection count,73,73,TRUE,results/HubGene/GSE29272_candidate_genes.csv
+A04,All candidate genes lower in tumor,73,73,TRUE,results/HubGene/GSE29272_candidate_genes.csv
+A05,WGCNA key module,192,192,TRUE,results/WGCNA/GSE29272_WGCNA_summary.csv
+A06,WGCNA scale-free criterion not reached,FALSE,FALSE,TRUE,results/WGCNA/GSE29272_WGCNA_summary.csv
+B_GSE79973_genes,GSE79973 assayed/concordant genes,72/72,72/72,TRUE,results/PaperValidation/external_bulk_validation_summary.csv
+B_GSE79973_score,GSE79973 module score P<0.05,0.00182630430343316,<0.05,TRUE,results/PaperValidation/external_bulk_validation_summary.csv
+B_GSE19826_genes,GSE19826 assayed/concordant genes,72/72,72/72,TRUE,results/PaperValidation/external_bulk_validation_summary.csv
+B_GSE19826_score,GSE19826 module score P<0.05,0.00486523531863197,<0.05,TRUE,results/PaperValidation/external_bulk_validation_summary.csv
+C01,Single-cell count,111140,111140,TRUE,results/PaperValidation/SingleCell/singlecell_analysis_summary.csv
+C02,Single-cell patients,24,24,TRUE,results/PaperValidation/SingleCell/singlecell_analysis_summary.csv
+C03,Eligible epithelial pairs,10,10,TRUE,results/PaperValidation/SingleCell/singlecell_analysis_summary.csv
+C04,Epithelial pseudobulk is non-significant,0.906758050028064,>=0.05,TRUE,results/PaperValidation/SingleCell/singlecell_analysis_summary.csv
+C05,Lineage-adjusted epithelial test is non-significant,0.72878547314667,>=0.05,TRUE,results/PaperValidation/SingleCell/singlecell_analysis_summary.csv
+D_GSE79973_attenuation,GSE79973 attenuation >50%,0.802837256659053,>0.5,TRUE,results/PaperValidation/Deconvolution/bulk_deconvolution_adjustment_summary.csv
+D_GSE79973_adjusted,GSE79973 adjusted P>=0.05,0.395247373433759,>=0.05,TRUE,results/PaperValidation/Deconvolution/bulk_deconvolution_adjustment_summary.csv
+D_GSE19826_attenuation,GSE19826 attenuation >50%,0.731099962421426,>0.5,TRUE,results/PaperValidation/Deconvolution/bulk_deconvolution_adjustment_summary.csv
+D_GSE19826_adjusted,GSE19826 adjusted P>=0.05,0.227417045978568,>=0.05,TRUE,results/PaperValidation/Deconvolution/bulk_deconvolution_adjustment_summary.csv
+D_GPL96,GSE29272 marker coverage limitation,2/10,2/10,TRUE,results/PaperValidation/Deconvolution/bulk_deconvolution_adjustment_summary.csv
+E01,All eight main figure files exist,8,8,TRUE,results/ManuscriptFigures
+E02,Figure source-data files,17,>=16,TRUE,results/ManuscriptFigures/SourceData
+F01,No unsupported phrase 'validated biomarker',FALSE,FALSE,TRUE,report/manuscript/manuscript_en.md
+F02,Repository placeholder retained,TRUE,TRUE,TRUE,report/manuscript/manuscript_en.md
+F03,"Author, affiliation, funding and competing-interest metadata complete",TRUE,TRUE,TRUE,report/manuscript/manuscript_en.md
