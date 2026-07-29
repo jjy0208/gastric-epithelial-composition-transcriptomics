@@ -2,6 +2,10 @@
 
 Version 1.0.0
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21677618.svg)](https://doi.org/10.5281/zenodo.21677618)
+
+Archived release: [Zenodo version 1.0.0](https://doi.org/10.5281/zenodo.21677618).
+
 This repository contains the R code, processed expression matrices, statistical
 outputs and figure source data supporting the manuscript:
 
@@ -29,7 +33,7 @@ does not establish a tumor-cell-intrinsic mechanism or a clinical biomarker.
   and SHA-256 checksums.
 - `metadata/file_manifest_sha256.csv`: checksum manifest for this release.
 - `metadata/DATA_DICTIONARY.md`: file and variable-level guidance.
-- `metadata/ZENODO_METADATA_TEMPLATE.md`: fields to paste into a Zenodo record.
+- `metadata/ZENODO_METADATA_TEMPLATE.md`: fields used for the Zenodo record.
 - `LICENSE_CODE`: MIT licence for the R code.
 - `LICENSE_DATA.md`: CC BY 4.0 licence for original processed data, derived
   outputs, figures and documentation.
@@ -63,6 +67,16 @@ not require the original Windows drive path.
 - GSE79973: external paired bulk validation cohort.
 - GSE19826: external paired bulk validation cohort.
 - GSE206785: paired single-cell localization and composition analysis.
+
+## Data and code availability
+
+The R scripts, processed expression matrices, statistical outputs, figure source
+data and reproducibility materials are publicly available in this GitHub
+repository and archived as version 1.0.0 in Zenodo at
+[https://doi.org/10.5281/zenodo.21677618](https://doi.org/10.5281/zenodo.21677618).
+
+Original public datasets are available from the NCBI Gene Expression Omnibus
+(GEO) under accession numbers GSE29272, GSE79973, GSE19826 and GSE206785.
 
 ## Reuse and attribution
 
