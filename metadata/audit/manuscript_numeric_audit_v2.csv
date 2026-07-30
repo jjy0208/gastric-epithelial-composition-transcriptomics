@@ -1,0 +1,47 @@
+id,description,observed,expected,pass,evidence
+A01,Discovery significant DEG count,122,122,TRUE,results/DEG/GSE29272_DEG_summary.csv
+A02,Discovery up/down counts,47/75,47/75,TRUE,results/DEG/GSE29272_DEG_summary.csv
+A03,Candidate intersection count,73,73,TRUE,results/HubGene/GSE29272_candidate_genes.csv
+A04,All candidate genes lower in tumor,73,73,TRUE,results/HubGene/GSE29272_candidate_genes.csv
+A05,WGCNA key-module gene count,192,192,TRUE,results/WGCNA/GSE29272_WGCNA_summary.csv
+A06,WGCNA scale-free R-squared criterion not reached,FALSE,FALSE,TRUE,results/WGCNA/GSE29272_WGCNA_summary.csv
+B_GSE79973_direction,GSE79973 assayed/concordant candidate genes,72/72,72/72,TRUE,results/PaperValidation/external_bulk_validation_summary.csv
+B_GSE79973_paired,GSE79973 paired module test,0.00182630430343316,<0.05,TRUE,results/PaperValidation/external_bulk_validation_summary.csv
+B_GSE19826_direction,GSE19826 assayed/concordant candidate genes,72/72,72/72,TRUE,results/PaperValidation/external_bulk_validation_summary.csv
+B_GSE19826_paired,GSE19826 paired module test,0.00486523531863197,<0.05,TRUE,results/PaperValidation/external_bulk_validation_summary.csv
+C01,GSE206785 total cells,111140,111140,TRUE,results/PaperValidation/SingleCell/singlecell_analysis_summary.csv
+C02,GSE206785 eligible epithelial pairs,10,10,TRUE,results/PaperValidation/SingleCell/singlecell_analysis_summary.csv
+C03,GSE206785 paired test did not detect a difference,0.906758050028064,>=0.05,TRUE,results/PaperValidation/SingleCell/singlecell_analysis_summary.csv
+C04,GSE270680 total cells,470609,470609,TRUE,results/PaperValidation/SingleCellReplication/GSE270680_singlecell_replication_summary.csv
+C05,GSE270680 patients/libraries,27/77,27/77,TRUE,results/PaperValidation/SingleCellReplication/GSE270680_singlecell_replication_summary.csv
+C06,GSE270680 eligible epithelial pairs,11,11,TRUE,results/PaperValidation/SingleCellReplication/GSE270680_singlecell_replication_summary.csv
+C07,GSE270680 paired mean difference,-0.699732405464963,-0.6997324,TRUE,results/PaperValidation/SingleCellReplication/GSE270680_singlecell_replication_summary.csv
+C08,GSE270680 paired P value,0.00048439057857985,<0.001,TRUE,results/PaperValidation/SingleCellReplication/GSE270680_singlecell_replication_summary.csv
+C09,GSE270680 lineage-adjusted P value,0.00939475533490582,<0.05,TRUE,results/PaperValidation/SingleCellReplication/GSE270680_singlecell_replication_summary.csv
+C10,GSE206785 cohort-specific standardized effect,-0.0348303519967794,-0.03483035,TRUE,results/PaperValidation/SingleCellReplication/singlecell_cross_cohort_standardized_effects.csv
+C11,GSE270680 cohort-specific standardized effect,-1.41124480123282,-1.4112448,TRUE,results/PaperValidation/SingleCellReplication/singlecell_cross_cohort_standardized_effects.csv
+D01,Primary spatial sections,33,33,TRUE,results/PaperValidation/Spatial/GSE270678_section_manifest.csv
+D02,Spatial donors,19,19,TRUE,results/PaperValidation/Spatial/GSE270678_spatial_concordance_tests.csv
+D03,Epithelial spatial localization,0.365357813408801,"positive, FDR<0.05",TRUE,results/PaperValidation/Spatial/GSE270678_spatial_concordance_tests.csv
+D04,Stromal association not detected,0.951866309397761,>=0.05,TRUE,results/PaperValidation/Spatial/GSE270678_spatial_concordance_tests.csv
+D05,Immune association not detected,0.621587484974321,>=0.05,TRUE,results/PaperValidation/Spatial/GSE270678_spatial_concordance_tests.csv
+E_GSE79973_attenuation,GSE79973 composition-adjusted attenuation,0.802837256659053,>0.5,TRUE,results/PaperValidation/Deconvolution/bulk_deconvolution_adjustment_summary.csv
+E_GSE19826_attenuation,GSE19826 composition-adjusted attenuation,0.731099962421426,>0.5,TRUE,results/PaperValidation/Deconvolution/bulk_deconvolution_adjustment_summary.csv
+F01,All 12 main-figure files exist,12,12,TRUE,results/ManuscriptFigures
+F02,Figure source-data files,23,>=22,TRUE,results/ManuscriptFigures/SourceData
+F03,New validation scripts exist,3,3,TRUE,scripts
+G01,No unfinished-template language in manuscript,"",none,TRUE,report/manuscript/manuscript_en.md
+G02,Key limitation statements retained,"",none missing,TRUE,report/manuscript/manuscript_en.md
+G03,"Author, affiliation, funding and conflict metadata complete",TRUE,TRUE,TRUE,report/manuscript/manuscript_en.md
+G04,Scientific Reports title length,17,<=20,TRUE,report/manuscript/manuscript_en.md
+G05,Scientific Reports abstract length,194,<=200,TRUE,report/manuscript/manuscript_en.md
+G06,No superscript-style citations remain in article body,0,0,TRUE,report/manuscript/manuscript_en.md
+G07,Reference list size after removing uncited legacy items,22,22,TRUE,report/manuscript/reference_recency_and_doi_audit.csv
+G08,References from 2021–2026,15,15,TRUE,report/manuscript/reference_recency_and_doi_audit.csv
+G09,Every retained older reference has an essential-source rationale,7,7,TRUE,report/manuscript/reference_recency_and_doi_audit.csv
+G10,All reference DOIs resolve through Crossref,22,22,TRUE,report/manuscript/reference_recency_and_doi_audit.csv
+G11,No em or en dash remains in article prose,0,0,TRUE,report/manuscript/manuscript_en.md
+G12,No targeted formulaic transition remains in article prose,"",none,TRUE,report/manuscript/manuscript_en.md
+G13,"M04 P value and FDR agree across source, text and legend",TRUE,TRUE,TRUE,"WGCNA source, manuscript and Figure 1 legend"
+G14,No formal two-cohort pooled-effect language remains,"",none,TRUE,manuscript and Figure 5 legend
+G15,Eligible-patient clinical audit has expected coverage,21 rows; 20 with clinical metadata,21 rows; 20 with clinical metadata,TRUE,singlecell_eligible_patient_clinical_metadata.csv

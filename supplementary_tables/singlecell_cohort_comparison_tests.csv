@@ -1,0 +1,6 @@
+variable,test,n_GSE206785,n_GSE270680,p_value,FDR,interpretation
+Age,Wilcoxon rank-sum,9,11,0.789769036447044,0.987211295558805,Exploratory only; small selected analysis subsets and incomplete metadata
+Sex,Fisher exact,9,11,0.196808763991426,0.935565015479876,Exploratory only; small selected analysis subsets and incomplete metadata
+Stage group,Fisher exact,9,11,0.66992140985949,0.987211295558805,Exploratory only; small selected analysis subsets and incomplete metadata
+Histologic group,Fisher exact,9,11,0.37422600619195,0.935565015479876,Exploratory only; small selected analysis subsets and incomplete metadata
+Platform,Fisher exact,10,11,1,1,Exploratory only; small selected analysis subsets and incomplete metadata

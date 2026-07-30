@@ -1,12 +1,15 @@
-# Zenodo metadata template
+# Zenodo metadata template for version 2.2.0
 
 ## Basic information
 
-- Upload type/resource type: Software
-- Title: Gastric epithelial composition-aware transcriptomics: code and source data
-- Version: 1.0.0
+- Resource type: Software
+- Title: Independent single-cell and spatial validation of a gastric cancer transcriptomic module: code and source data
+- Version: 2.2.0
 - Publication date: use the actual Zenodo publication date
-- DOI: reserve in Zenodo; do not invent or prefill
+- Concept DOI: 10.5281/zenodo.21677617
+- Version DOI: use the DOI reserved automatically for the new Zenodo version;
+  do not invent or prefill it
+- Visibility: Public
 
 ## Creators, in order
 
@@ -23,17 +26,18 @@ Hospital
 
 ## Description
 
-Reproducible R code, processed gene-expression matrices, statistical outputs
-and figure source data supporting a composition-aware reanalysis of paired
-gastric cancer transcriptomic cohorts. The release contains derived data from
-GSE29272, GSE79973, GSE19826 and GSE206785; original GEO files are not
-redistributed.
+Reproducible R code and frozen derived outputs supporting a composition-aware
+reanalysis of three paired bulk gastric cancer cohorts (GSE29272, GSE79973 and
+GSE19826), two independent single-cell cohorts (GSE206785 and GSE270680), and
+one spatial transcriptomic cohort (GSE270678). Original GEO files, third-party
+publication supplements and author-provided objects are not redistributed.
 
 ## Keywords
 
 - gastric cancer
 - bulk transcriptomics
 - single-cell RNA sequencing
+- spatial transcriptomics
 - tissue composition
 - gene-expression module
 - GEO
@@ -46,12 +50,19 @@ First-Class Discipline Team of Kunming Medical University, grant
 
 ## Related identifiers
 
-- Add the final GitHub repository URL with relation `IsSupplementTo`.
-- Add the manuscript DOI after publication with relation `IsSupplementTo`.
-- Preserve all GEO accessions in the description and README.
+- GitHub repository:
+  https://github.com/jjy0208/gastric-epithelial-composition-transcriptomics
+  with relation `IsSupplementTo`
+- Preserve the concept DOI and the link to version 1.0.0.
+- Add the manuscript DOI only after publication.
 
-## Licence
+## Licences and rights
 
-Pending author/institutional decision. Resolve before publication. Do not apply
-an open licence to third-party GEO source files; those files are not included.
+- Code: MIT (`LICENSE_CODE`)
+- Authors' original derived tables, figures and documentation: CC BY 4.0
+  (`LICENSE_DATA.md`)
+- Third-party source data are not included and remain under their original
+  terms.
 
+If Zenodo requires one primary software licence, select MIT and retain the
+dual-licensing explanation in the description or rights statement.

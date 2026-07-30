@@ -1,0 +1,3 @@
+dataset	file	query_date	source_url	sha256	purpose
+GSE206785	GSE206785_publication_TableS1_patient_characteristics.xlsx	2026-07-30	https://static-content.springer.com/esm/art%3A10.1186%2Fs13059-022-02828-2/MediaObjects/13059_2022_2828_MOESM2_ESM.xlsx	59881a4a4655f63fec544075d9129bde0da857049ee0c4991a53a68d616012cf	Published Table S1 patient characteristics
+GSE270680	GSE270680_publication_Supplementary_Data_1-10.xlsx	2026-07-30	https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-026-68612-z/MediaObjects/41467_2026_68612_MOESM3_ESM.xlsx	7fe4ec200685fd5ac05fd7872c28fdc79ebd74c8a73debca5cced16879fd137b	Published Supplementary Data 1-10, including clinical information

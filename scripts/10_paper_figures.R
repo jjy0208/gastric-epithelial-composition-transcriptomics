@@ -80,21 +80,30 @@ candidate <- fread(file.path(hub_dir, "GSE29272_candidate_genes.csv"))
 stopifnot(nrow(deg_sig) == 122L, nrow(candidate) == 73L)
 
 cohort_df <- data.table(
-  order = 1:4,
-  stage = c("Discovery", "Bulk validation", "Single-cell test", "Composition adjustment"),
+  order = 1:5,
+  stage = c(
+    "Discovery", "Bulk validation", "Single-cell I",
+    "Single-cell II", "Spatial validation"
+  ),
   dataset = c("GSE29272\n134 paired patients",
               "GSE79973 + GSE19826\n10 + 12 paired patients",
               "GSE206785\n24 paired patients; 111,140 cells",
-              "GSE206785 + 3 bulk cohorts\npatient-level models")
+              "GSE270680\n27 donors; 470,609 cells",
+              "GSE270678\n19 donors; 33 primary sections")
 )
 f1a <- ggplot(cohort_df, aes(order, 1)) +
-  geom_segment(aes(x = 1, xend = 4, y = 1, yend = 1),
+  geom_segment(aes(x = 1, xend = 5, y = 1, yend = 1),
                linewidth = 0.8, colour = pal["grey"]) +
-  geom_point(size = 5, colour = unname(c(pal["blue"], pal["purple"], pal["green"], pal["olive"]))) +
+  geom_point(
+    size = 5,
+    colour = unname(c(
+      pal["blue"], pal["purple"], pal["green"], pal["olive"], pal["tumor"]
+    ))
+  ) +
   geom_label(aes(label = stage), vjust = -1.5, size = 3.0, linewidth = 0,
              fill = "white", fontface = "bold") +
   geom_text(aes(label = dataset), vjust = 2.0, size = 2.7, lineheight = 0.95) +
-  scale_x_continuous(limits = c(0.7, 4.3)) +
+  scale_x_continuous(limits = c(0.7, 5.3)) +
   coord_cartesian(ylim = c(0.55, 1.45), clip = "off") +
   theme_void(base_family = "Arial") +
   theme(plot.margin = margin(18, 10, 18, 10))

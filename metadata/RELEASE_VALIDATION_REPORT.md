@@ -1,26 +1,54 @@
-# 发布包验证报告
+# Public release validation report
 
-验证日期：2026-07-29  
-发布版本：v1.0.0
+Validation date: 2026-07-30
 
-## 验证结果
+Release candidate: v2.2.0
 
-- 发布目录关键文件检查：13/13 存在。
-- R 脚本语法检查：13/13 通过，无解析错误。
-- `GSE29272`：表达矩阵含 11,293 个基因和 268 个样本；样本信息表含 268 个样本，样本集合及顺序均完全一致。
-- `GSE79973`：表达矩阵含 18,760 个基因和 20 个样本；样本信息表含 20 个样本，样本集合及顺序均完全一致。
-- 已复制分析文件的原始文件比对：192/192 个文件 SHA-256 完全一致。
-- 稿件数值审计：25/25 项通过。
-- `CITATION.cff`：YAML 可正常读取，包含 5 位作者。
-- 排除项检查：未包含 `raw_data`、STRING 缓存或质控渲染临时目录。
-- 本地路径检查：发布文本和代码中未发现本机绝对项目路径或 Windows 用户目录标识。
+## Intended public scope
 
-## 发布范围
+- 23 R scripts
+- 12 frozen main-figure files
+- 23 figure source-data tables
+- 21 supplementary result and provenance tables
+- 8 current audit files
+- 6 validation summaries and R session records
+- repository documentation, citation metadata and licence files
 
-发布包包含清洗后的分析矩阵、样本信息、可复现 R 脚本、主要分析结果、图表和审计材料。GEO 原始及平台文件不在包内重复分发；其 accession、下载文件名、来源地址和下载文件 SHA-256 记录于 `data_sources.tsv`。
+## Explicit exclusions
 
-## 尚需完成
+- original GEO archives and matrices
+- third-party publication supplements
+- author-provided large single-cell objects
+- manuscript and supplementary-information DOCX/PDF files
+- cover letter and submission-only documents
+- local caches, temporary files and manuscript render directories
 
-- 已根据作者明确授权加入代码 MIT 和原创处理数据/文档 CC BY 4.0 双许可证；第三方 GEO 源数据不在授权范围内。
-- GitHub 仓库地址、Zenodo DOI 和发布日期只能在实际创建或发布后填写，不得预填或虚构。
-- Zenodo 上传前应再次核对作者、题名、描述、关键词、基金信息和关联 GitHub 版本。
+## Validation status
+
+- Source package SHA-256 confirmed before staging:
+  `db2b751e72605228513261333d11251b0601493aba0ae7b96e9b3e27d74d2c07`.
+- Source-to-staging comparison covered 93 files across all six public content
+  groups: 89 were byte-identical and four had documented public-release safety
+  edits.
+- The four intentional edits were:
+  - conversion of local absolute paths to project-relative paths in three
+    provenance tables;
+  - omission of non-corresponding-author email addresses from the public copy
+    of `12_build_manuscript_docx.R`.
+- Missing source files: 0.
+- Unexpected source-to-staging hash mismatches: 0.
+- R syntax parsing: 23/23 scripts passed.
+- `CITATION.cff`: valid YAML, version 2.2.0, five creators.
+- CSV structural loading: all CSV files passed with at least one data row.
+- Forbidden raw/submission file types or directories: 0.
+- Files at or above 25 MB: 0.
+- Local absolute project-path hits: 0.
+- credential/private-key pattern hits: 0.
+- Public email exposure is limited to the already-public corresponding-author
+  address in README, citation metadata and the sanitized manuscript builder.
+- Public-release SHA-256 manifest generated and verified with zero mismatches.
+- GitHub authentication and repository administrator permission confirmed.
+- Git commit, push, tag, GitHub Release and Zenodo publication: pending.
+
+This report must be updated only from actual validation results. A pending item
+must not be represented as passed.

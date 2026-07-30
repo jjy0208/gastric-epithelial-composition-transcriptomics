@@ -1,59 +1,53 @@
 # Data dictionary
 
-## Processed bulk expression matrices
+## Figures
 
-Files:
-
-- `clean_data/GSE29272_clean_expression_matrix.csv`
-- `clean_data/GSE79973_clean_expression_matrix.csv`
-- `clean_data/GSE19826_clean_expression_matrix.csv`
-
-Rows are HGNC gene symbols and columns are GEO samples. Values are processed,
-gene-level microarray expression values. Multiple probes assigned to the same
-gene were averaged after annotation. The GSE19826 positive signal matrix was
-transformed as `log2(signal + 1)` before probe aggregation.
-
-## Sample metadata
-
-Files ending in `_sample_info.csv` link expression-matrix columns to analysis
-groups. Core fields include:
-
-- `sample`: GEO sample identifier.
-- `group`: analysis group, standardized as tumor or normal.
-- Additional columns retain available pairing, tissue, platform or source
-  metadata.
-
-Only complete tumor-normal patient pairs entered the paired primary analyses.
-
-## Paper validation outputs
-
-`results/PaperValidation/` contains:
-
-- external bulk gene-direction and module-score validation;
-- patient-level single-cell pseudobulk scores;
-- whole-tissue composition sensitivity analyses;
-- independent gastric-lineage decomposition scores;
-- statistical summaries, reports and software environment records.
-
-Single-cell patient and sample codes are retained from the already public
-GSE206785 metadata. No newly collected direct identifiers are included.
+`figures/` contains the six frozen main figures in PDF and PNG formats. These
+files are publication-facing outputs rather than independent raw measurements.
 
 ## Figure source data
 
-`results/ManuscriptFigures/SourceData/` maps one CSV file to each main-figure
-panel. Filenames begin with the corresponding figure and panel number.
+`source_data/` contains CSV files mapped to main-figure panels. Filenames begin
+with the corresponding figure number. Statistical source tables retain the
+units used in the manuscript: paired patients for patient-level comparisons,
+sections or donors for spatial summaries, and cohorts for bulk validation.
+
+## Supplementary tables
+
+`supplementary_tables/` contains:
+
+- discovery differential-expression and enrichment tables;
+- external bulk validation summaries;
+- composition-adjustment summaries;
+- patient-level single-cell summaries for GSE206785 and GSE270680;
+- descriptive cross-cohort standardized effects, without a pooled estimate;
+- spatial section manifests, gene coverage and concordance tests for GSE270678;
+- download inventories for public inputs.
+
+`singlecell_eligible_patient_clinical_metadata.csv` uses public study patient
+codes, not names or newly collected identifiers. Blank fields represent
+information not reported in the public source.
+
+## Audit and validation records
+
+`metadata/audit/` contains the frozen version 2.2.0 claim-evidence map,
+manuscript numeric audit, reference audit and terminology records.
+
+`metadata/validation_summaries/` contains cohort-specific validation reports and
+R session-information files.
+
+Historical version 1.0.0 audit files are retained separately in
+`metadata/audit_v1.0.0/`.
 
 ## Missing values and exclusions
 
 Blank fields or `NA` represent unavailable quantities. Exclusion rules and
-minimum-cell thresholds are documented in the R scripts and analysis reports.
-Cells were not treated as independent biological replicates; paired patients
-were the statistical unit where patient pairing was available.
+minimum-cell thresholds are documented in the R scripts and validation reports.
+Cells and spatial spots were not treated as independent biological replicates.
 
-## Provenance
+## Provenance and licensing
 
-All processed outputs derive from the public GEO accessions recorded in
-`data_sources.tsv`. Raw third-party GEO files are not included in this release.
-Release file integrity can be checked with
-`metadata/file_manifest_sha256.csv`.
-
+All outputs derive from the public sources recorded in `data_sources.tsv`.
+Original GEO files, author-provided objects and publication supplements are not
+redistributed. The public release integrity is recorded in
+`file_manifest_sha256.csv`.

@@ -1,9 +1,13 @@
-accession	resource_role	landing_page	downloaded_filename	sha256	redistributed
-GSE29272	discovery paired bulk microarray	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE29272	GSE29272_series_matrix.txt.gz	8815674B91D2907572F796B4026770C1C8F11CDC8487A1E5243900164832F625	no
-GPL96	platform annotation for GSE29272	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GPL96	GPL96.soft.gz	34E01F9A175DC3927F8BD0F8301B164DCB6540BA26FFA360540AE597A360752C	no
-GSE79973	external paired bulk validation	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE79973	GSE79973_series_matrix.txt.gz	97CF8CB2F0CEFF626671BD1E917EEA6EDB28AE24063B00627ACBB57E27D65052	no
-GPL570	platform annotation for GSE79973 and GSE19826	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GPL570	GPL570.annot.gz	D7CD44352127B1E34F3A720EBEA86093EF255A38F1612A85A2962B71BDE8F394	no
-GSE19826	external paired bulk validation	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE19826	GSE19826_series_matrix.txt.gz	E79F990549CAEFBF77376BB4F10982A758776E7D5536A6898CB122297D49ED07	no
-GSE206785	paired single-cell localization and composition analysis	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE206785	GSE206785_metadata.txt.gz	E9019A23116E7A6C6B17FFECA989887B4374E814804FA328574A625590849AD4	no
-GSE206785	processed single-cell expression matrix	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE206785	GSE206785_scgex.txt.gz	0D9B51BAF814741C47273C747345BEE1291AE5056187968B09A22A54DF687EC7	no
-
+accession	resource_role	landing_page	downloaded_filename	checksum_type	checksum_value	redistributed
+GSE29272	discovery paired bulk microarray	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE29272	GSE29272_series_matrix.txt.gz	SHA-256	8815674B91D2907572F796B4026770C1C8F11CDC8487A1E5243900164832F625	no
+GPL96	platform annotation for GSE29272	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GPL96	GPL96.soft.gz	SHA-256	34E01F9A175DC3927F8BD0F8301B164DCB6540BA26FFA360540AE597A360752C	no
+GSE79973	external paired bulk validation	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE79973	GSE79973_series_matrix.txt.gz	SHA-256	97CF8CB2F0CEFF626671BD1E917EEA6EDB28AE24063B00627ACBB57E27D65052	no
+GPL570	platform annotation for GSE79973 and GSE19826	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GPL570	GPL570.annot.gz	SHA-256	D7CD44352127B1E34F3A720EBEA86093EF255A38F1612A85A2962B71BDE8F394	no
+GSE19826	external paired bulk validation	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE19826	GSE19826_series_matrix.txt.gz	SHA-256	E79F990549CAEFBF77376BB4F10982A758776E7D5536A6898CB122297D49ED07	no
+GSE206785	paired single-cell localization and composition analysis	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE206785	GSE206785_metadata.txt.gz	SHA-256	E9019A23116E7A6C6B17FFECA989887B4374E814804FA328574A625590849AD4	no
+GSE206785	processed single-cell expression matrix	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE206785	GSE206785_scgex.txt.gz	SHA-256	0D9B51BAF814741C47273C747345BEE1291AE5056187968B09A22A54DF687EC7	no
+GSE270680	independent paired single-cell validation	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE270680	GSE270680_RAW.tar	MD5	88fe595cbb9800849a3e59a1c021d273	no
+GSE270680	author-annotated single-cell object	https://data.mendeley.com/datasets/559mchb37p	sc.rds	SHA-256	3aa4ec260c9552acbf377a697dd962ac8287aa0c79c9b435714b1697bf7e6265	no
+GSE270678	spatial transcriptomic validation	https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE270678	GSE270678_RAW.tar	MD5	0c0f7d12342c9e7d15fe009000a688bf	no
+GSE206785	published patient-characteristics supplement	https://doi.org/10.1186/s13059-022-02828-2	GSE206785_publication_TableS1_patient_characteristics.xlsx	SHA-256	59881a4a4655f63fec544075d9129bde0da857049ee0c4991a53a68d616012cf	no
+GSE270680	published clinical-information supplement	https://doi.org/10.1038/s41467-026-68612-z	GSE270680_publication_Supplementary_Data_1-10.xlsx	SHA-256	7fe4ec200685fd5ac05fd7872c28fdc79ebd74c8a73debca5cced16879fd137b	no

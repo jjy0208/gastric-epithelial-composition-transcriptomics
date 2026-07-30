@@ -1,0 +1,18 @@
+claim_id,manuscript_claim,evidence_file,evidence_fields_or_rows,status,boundary
+C01,"GSE29272 contains 134 matched tumor-normal pairs","clean_data/GSE29272_sample_info.csv","268 rows; 134 pair IDs with both groups",supported,"adjacent normal, not healthy control"
+C02,"Paired limma-TREAT identified 122 DEGs: 47 up and 75 down","results/DEG/GSE29272_DEG_summary.csv","significant_genes; upregulated; downregulated",supported,"threshold is TREAT FDR<0.05 and absolute effect >1"
+C03,"M04 contains 192 genes and correlates r=-0.756 with disease","results/WGCNA/GSE29272_WGCNA_summary.csv","key_module_genes; key_module_correlation; key_module_FDR",supported,"R2 criterion was not reached; beta=28 fallback"
+C04,"DEG-M04 intersection contains 73 genes, all down","results/HubGene/GSE29272_candidate_genes.csv","73 rows; DEG_direction=Down",supported,"intersection is not a clinical biomarker set"
+C05,"Both external cohorts have 72/72 genes directionally concordant","results/PaperValidation/external_bulk_validation_summary.csv","down_direction_genes=72; direction_concordance=1",supported,"IGJ absent"
+C06,"GSE79973 module difference is -1.290, P=0.00183","results/PaperValidation/external_bulk_validation_summary.csv","GSE79973 row",supported,"within-cohort standardized score"
+C07,"GSE19826 module difference is -1.100, P=0.00487","results/PaperValidation/external_bulk_validation_summary.csv","GSE19826 row",supported,"after log2(signal+1)"
+C08,"GSE206785 has 111140 cells from 24 paired patients","results/PaperValidation/SingleCell/singlecell_analysis_summary.csv","cells; patients; samples",supported,"processed public expression"
+C09,"Module localizes predominantly to epithelial cells","results/PaperValidation/SingleCell/singlecell_type_pseudobulk_scores.csv","Type-specific score distributions",supported,"author annotations used"
+C10,"Epithelial pseudobulk difference is null","results/PaperValidation/SingleCell/singlecell_analysis_summary.csv","difference=-0.014188; paired P=0.906758",supported,"10 complete pairs; tumor-derived does not mean malignant"
+C11,"Epithelial proportion is lower in tumor","results/PaperValidation/Deconvolution/GSE206785_whole_tissue_composition_summary.csv","normal and tumor proportions; paired P",supported,"captured-cell proportion, not histology"
+C12,"Composition-expected difference approximates observed difference","results/PaperValidation/Deconvolution/GSE206785_whole_tissue_composition_summary.csv","observed=-0.457458; expected=-0.499178; residual=0.041720",supported,"descriptive counterfactual, not causal percentage"
+C13,"External bulk adjustment attenuates effects by 80.3% and 73.1%","results/PaperValidation/Deconvolution/bulk_deconvolution_adjustment_summary.csv","GSE79973 and GSE19826 rows",supported,"relative lineage scores; candidate genes excluded"
+C14,"GSE29272 adjustment is marker-limited","results/PaperValidation/Deconvolution/bulk_deconvolution_adjustment_summary.csv","2 identity lineages; 10 markers",supported,"cannot interpret 5.1% attenuation as absence of confounding"
+C15,"STRING network has 73 nodes, 135 edges and 13 isolates","results/PPI","network summary and node/edge tables",supported,"descriptive; no added nodes; confidence 0.4"
+C16,"The module is a composition-sensitive signal rather than proven intrinsic repression","C08-C14","triangulation of single-cell and adjustment results",supported_with_inference,"bounded inference; requires spatial/pathology confirmation"
+

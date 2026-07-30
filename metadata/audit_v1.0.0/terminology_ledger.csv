@@ -1,0 +1,12 @@
+preferred_term,avoid,reason
+"adjacent normal tissue","healthy control","GEO samples were adjacent non-tumor mucosa, not population healthy stomach"
+"tumor-derived epithelial cells","malignant cells","no CNV inference or orthogonal malignant-cell labels were used"
+"processed single-cell expression","raw single-cell counts","public file was processed log1p count-like expression"
+"relative gastric-lineage score","cell fraction","Bisque marker-based PCA output is not an absolute proportion"
+"composition-sensitive epithelial abundance signal","tumor-suppressor mechanism","results distinguish abundance from cell-intrinsic regulation but do not test mechanism"
+"candidate genes","validated biomarkers","diagnostic, prognostic and clinical utility were not evaluated"
+"attenuation after adjustment","mediation","the analysis is observational and not a causal mediation model"
+"descriptive fraction reproduced","percent causally explained","single-cell capture and compositional effects prevent exact causal attribution"
+"locked 73-gene module","optimized signature","the list was defined in discovery and not reselected in validation"
+"patient–sample pseudobulk","single-cell-level replicate","patients, not cells, are the independent units"
+

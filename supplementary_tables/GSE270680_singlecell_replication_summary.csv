@@ -1,0 +1,17 @@
+metric,value
+cells_total,470609
+patients_total,27
+libraries_total,77
+normal_tumor_patients_before_cell_threshold,21
+epithelial_cells_normal,2962
+epithelial_cells_tumor,3550
+eligible_complete_epithelial_pairs,11
+candidate_genes_available,71
+mean_tumor_minus_normal,-0.699732405464963
+paired_t_ci_low,-1.00720997155681
+paired_t_ci_high,-0.392254839373119
+paired_t_pvalue,0.00048439057857985
+paired_wilcoxon_pvalue,0.00385729282994253
+lineage_adjusted_tumor_coefficient,-0.321448691775227
+lineage_adjusted_cluster_robust_se,0.116303664745951
+lineage_adjusted_cluster_robust_pvalue,0.00939475533490582

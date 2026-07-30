@@ -1,0 +1,15 @@
+characteristic,GSE206785,GSE270680
+"Full source cohort, donors",24,27
+Eligible paired epithelial analysis,10,11
+Eligible patients with published clinical metadata,9/10,11/11
+"Age, median [IQR], years",59.0 [55.0-65.0],64.0 [54.0-68.0]
+Male sex,7/9,5/11
+Stage I,2/9,1/11
+Stage II,1/9,4/11
+Stage III,6/9,6/11
+Stage IV,0/9,0/11
+Intestinal histology,2/9,5/11
+Non-intestinal histology,7/9,6/11
+Anatomic gastric position,Angular incisure; EGJ; Not reported for this patient; Pyloric antrum,Not reported
+Single-cell platform,3P; 5P,3P; 3P;5P; 5P
+Epithelial selection before sequencing,EPCAM-positive depletion,No EPCAM depletion reported

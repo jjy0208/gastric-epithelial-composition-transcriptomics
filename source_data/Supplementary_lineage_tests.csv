@@ -1,0 +1,2 @@
+Lineage,paired_patients,mean_tumor_minus_normal,ci_low,ci_high,pvalue,padj
+Pit_mucous,5,0.047092913135703,-0.17050996603367,0.264695792305076,0.5803157078925,0.5803157078925
