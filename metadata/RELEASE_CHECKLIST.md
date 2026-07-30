@@ -11,8 +11,10 @@
   validation summaries.
 - [x] Complete privacy, path, source-copy and syntax validation.
 - [x] Generate and verify the public-release SHA-256 manifest.
-- [ ] Commit the reviewed public release candidate and record its SHA.
-- [ ] Push the release branch and merge the reviewed changes into `main`.
+- [x] Commit the reviewed public release candidate:
+  `7e257ec4621e35d053dfed9fe1115c22ab2eb581`.
+- [x] Push the release branch and merge PR #1 into `main`:
+  `fda9b0a8d053399f08a09855f54e55c8a97005bd`.
 - [ ] Create GitHub tag and Release `v2.2.0`.
 - [ ] Build the Zenodo archive from the exact tagged Git state.
 - [ ] Create a new version under Zenodo concept DOI
