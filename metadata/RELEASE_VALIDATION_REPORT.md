@@ -72,6 +72,10 @@ Release version: v2.2.0
   `aecfa870041ef2457e2a14d3e451a482`, matching Zenodo.
 - Both the version DOI and concept DOI resolved to the published version
   2.2.0 record with HTTP 200 during post-publication verification.
+- A post-publication audit checked all 108 manifest entries directly inside the
+  released ZIP. Seventy-two entries matched as raw bytes; the remaining 36
+  text files matched after CRLF-to-LF normalization, which is the manifest's
+  text-file convention. Unresolved manifest mismatches: 0.
 
 This report must be updated only from actual validation results. A pending item
 must not be represented as passed.

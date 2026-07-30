@@ -41,6 +41,9 @@ mechanism, a causal mediator, a clinical biomarker, or protein-level validation.
 - `metadata/data_sources.tsv`: public source accessions, downloaded filenames
   and recorded checksums.
 - `metadata/file_manifest_sha256.csv`: SHA-256 manifest for the public release.
+  Text files are measured and hashed after CRLF-to-LF normalization; binary
+  files are measured and hashed byte-for-byte. The release ZIP has a separate
+  whole-archive SHA-256 checksum.
 - `metadata/ZENODO_METADATA_TEMPLATE.md`: fields to verify in the Zenodo record.
 - `LICENSE_CODE`: MIT licence for the R code.
 - `LICENSE_DATA.md`: CC BY 4.0 licence for original derived outputs, figures and
