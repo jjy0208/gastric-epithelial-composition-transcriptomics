@@ -80,8 +80,9 @@ The stable Zenodo concept DOI for all versions is
 version 1.0.0 record is
 [10.5281/zenodo.21677618](https://doi.org/10.5281/zenodo.21677618).
 
-The version-specific Zenodo DOI for version 2.2.0 will be added only after the
-new Zenodo version is actually published.
+The version-specific Zenodo DOI reserved for version 2.2.0 is
+[10.5281/zenodo.21700808](https://doi.org/10.5281/zenodo.21700808). It becomes
+registered when the Zenodo version is published.
 
 Original public datasets remain available from NCBI GEO under accession
 numbers GSE29272, GSE79973, GSE19826, GSE206785, GSE270680 and GSE270678.

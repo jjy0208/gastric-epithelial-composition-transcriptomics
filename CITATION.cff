@@ -4,9 +4,12 @@ title: "Independent single-cell and spatial validation of a gastric cancer trans
 type: software
 version: "2.2.0"
 date-released: "2026-07-30"
-doi: "10.5281/zenodo.21677617"
+doi: "10.5281/zenodo.21700808"
 
 identifiers:
+  - type: doi
+    value: "10.5281/zenodo.21700808"
+    description: "Archived snapshot of version 2.2.0."
   - type: doi
     value: "10.5281/zenodo.21677617"
     description: "Concept DOI representing all versions of this software release."
@@ -15,7 +18,7 @@ identifiers:
     description: "Archived snapshot of version 1.0.0."
 
 repository-code: "https://github.com/jjy0208/gastric-epithelial-composition-transcriptomics"
-url: "https://doi.org/10.5281/zenodo.21677617"
+url: "https://doi.org/10.5281/zenodo.21700808"
 license: MIT
 
 authors:

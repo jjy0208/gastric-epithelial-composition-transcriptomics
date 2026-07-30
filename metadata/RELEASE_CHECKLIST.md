@@ -15,10 +15,13 @@
   `7e257ec4621e35d053dfed9fe1115c22ab2eb581`.
 - [x] Push the release branch and merge PR #1 into `main`:
   `fda9b0a8d053399f08a09855f54e55c8a97005bd`.
+- [x] Merge the release-state cleanup in PR #2:
+  `d4c8af5a5f8d0c11cbefd062df57daa921aa3631`.
 - [ ] Create GitHub tag and Release `v2.2.0`.
 - [ ] Build the Zenodo archive from the exact tagged Git state.
-- [ ] Create a new version under Zenodo concept DOI
-  `10.5281/zenodo.21677617`.
+- [x] Create a new version under Zenodo concept DOI
+  `10.5281/zenodo.21677617` and reserve version DOI
+  `10.5281/zenodo.21700808`.
 - [ ] Verify the Zenodo file checksum, creators, licences, version and DOI.
 - [ ] Publish the Zenodo version and test both DOI and GitHub URLs signed out.
 - [ ] Only then update the manuscript and cover letter with the real version
