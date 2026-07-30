@@ -52,6 +52,11 @@ Release version: v2.2.0
   `7e257ec4621e35d053dfed9fe1115c22ab2eb581`.
 - PR #1 merge commit:
   `fda9b0a8d053399f08a09855f54e55c8a97005bd`.
+- PR #2 release-state cleanup merge commit:
+  `d4c8af5a5f8d0c11cbefd062df57daa921aa3631`.
+- Zenodo version 2.2.0 draft created under concept DOI
+  `10.5281/zenodo.21677617`; version DOI
+  `10.5281/zenodo.21700808` reserved.
 - Git tag, GitHub Release and Zenodo publication: pending.
 
 This report must be updated only from actual validation results. A pending item

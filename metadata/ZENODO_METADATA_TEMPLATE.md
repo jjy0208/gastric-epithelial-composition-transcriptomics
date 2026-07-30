@@ -5,10 +5,9 @@
 - Resource type: Software
 - Title: Independent single-cell and spatial validation of a gastric cancer transcriptomic module: code and source data
 - Version: 2.2.0
-- Publication date: use the actual Zenodo publication date
+- Publication date: 2026-07-30
 - Concept DOI: 10.5281/zenodo.21677617
-- Version DOI: use the DOI reserved automatically for the new Zenodo version;
-  do not invent or prefill it
+- Reserved version DOI: 10.5281/zenodo.21700808
 - Visibility: Public
 
 ## Creators, in order
