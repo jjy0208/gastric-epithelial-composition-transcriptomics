@@ -2,7 +2,7 @@
 
 Validation date: 2026-07-30
 
-Release candidate: v2.2.0
+Release version: v2.2.0
 
 ## Intended public scope
 
@@ -48,7 +48,11 @@ Release candidate: v2.2.0
   address in README, citation metadata and the sanitized manuscript builder.
 - Public-release SHA-256 manifest generated and verified with zero mismatches.
 - GitHub authentication and repository administrator permission confirmed.
-- Git commit, push, tag, GitHub Release and Zenodo publication: pending.
+- Reviewed content commit:
+  `7e257ec4621e35d053dfed9fe1115c22ab2eb581`.
+- PR #1 merge commit:
+  `fda9b0a8d053399f08a09855f54e55c8a97005bd`.
+- Git tag, GitHub Release and Zenodo publication: pending.
 
 This report must be updated only from actual validation results. A pending item
 must not be represented as passed.
