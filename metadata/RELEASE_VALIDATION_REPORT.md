@@ -54,10 +54,24 @@ Release version: v2.2.0
   `fda9b0a8d053399f08a09855f54e55c8a97005bd`.
 - PR #2 release-state cleanup merge commit:
   `d4c8af5a5f8d0c11cbefd062df57daa921aa3631`.
+- PR #3 reserved-DOI merge commit and frozen `v2.2.0` tag target:
+  `da1479faa1843bf9d6f260d04f980ddb809f162a`.
 - Zenodo version 2.2.0 draft created under concept DOI
   `10.5281/zenodo.21677617`; version DOI
   `10.5281/zenodo.21700808` reserved.
-- Git tag, GitHub Release and Zenodo publication: pending.
+- GitHub Release `v2.2.0` published with two assets:
+  `gastric-epithelial-composition-transcriptomics-v2.2.0-public.zip`
+  (30,093,457 bytes) and its 131-byte SHA-256 text file.
+- Zenodo version 2.2.0 published on 2026-07-30 at
+  `https://doi.org/10.5281/zenodo.21700808`.
+- The Zenodo ZIP was downloaded after publication and independently verified:
+  SHA-256
+  `7d753806613b0e6f92423802445721fc87114a9f758a8b0e05ff048dd211a7a0`
+  and MD5 `ccc55fcff7a85dce4d92a407be1d3423`.
+- The 131-byte checksum file MD5 was
+  `aecfa870041ef2457e2a14d3e451a482`, matching Zenodo.
+- Both the version DOI and concept DOI resolved to the published version
+  2.2.0 record with HTTP 200 during post-publication verification.
 
 This report must be updated only from actual validation results. A pending item
 must not be represented as passed.

@@ -17,13 +17,17 @@
   `fda9b0a8d053399f08a09855f54e55c8a97005bd`.
 - [x] Merge the release-state cleanup in PR #2:
   `d4c8af5a5f8d0c11cbefd062df57daa921aa3631`.
-- [ ] Create GitHub tag and Release `v2.2.0`.
-- [ ] Build the Zenodo archive from the exact tagged Git state.
+- [x] Merge the reserved DOI update in PR #3:
+  `da1479faa1843bf9d6f260d04f980ddb809f162a`.
+- [x] Create GitHub tag and Release `v2.2.0` from
+  `da1479faa1843bf9d6f260d04f980ddb809f162a`.
+- [x] Build the Zenodo archive from the exact tagged Git state.
 - [x] Create a new version under Zenodo concept DOI
   `10.5281/zenodo.21677617` and reserve version DOI
   `10.5281/zenodo.21700808`.
-- [ ] Verify the Zenodo file checksum, creators, licences, version and DOI.
-- [ ] Publish the Zenodo version and test both DOI and GitHub URLs signed out.
+- [x] Verify the Zenodo file checksum, creators, licences, version and DOI.
+- [x] Publish the Zenodo version and verify both version and concept DOI
+  resolution.
 - [ ] Only then update the manuscript and cover letter with the real version
   DOI and publication date.
 - [ ] Rebuild and re-audit the final submission package.
