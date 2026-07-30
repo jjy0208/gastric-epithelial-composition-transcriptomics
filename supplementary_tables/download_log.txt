@@ -1,0 +1,79 @@
+GEO 公共数据下载日志
+项目：GEO_bulk_analysis_project
+记录时间：2026-07-29 09:13:55 +08:00（Asia/Shanghai）
+
+说明：
+- 本机当前未发现可调用的 R/Rscript，因此本次不能实际调用 GEOquery。
+- 已在 NCBI GEO 官方页面核查：两个保留数据集均提供 Series Matrix，且 processed data included within Sample table。
+- 本次从 GEO 官方 FTP 的 matrix 目录直接下载 Series Matrix；文件同时包含处理后的表达矩阵与样本元数据。
+- 未下载原始 CEL 压缩包，未进行差异分析。
+
+数据集编号：GSE79973
+下载时间：2026-07-29 09:13:55 +08:00
+下载方式：NCBI GEO 官方 Series Matrix 直接下载（本机无可用 R；数据源与 GEOquery 的 GSEMatrix 下载一致）
+下载到的文件名称：GSE79973_series_matrix.txt.gz
+文件路径：raw_data\GSE79973_series_matrix.txt.gz
+文件大小：4919489 字节
+SHA-256：97CF8CB2F0CEFF626671BD1E917EEA6EDB28AE24063B00627ACBB57E27D65052
+验证结果：压缩流可完整读取；GPL570；20 个样本；54675 个表达探针行
+
+数据集编号：GSE29272
+下载时间：2026-07-29 09:13:55 +08:00
+下载方式：NCBI GEO 官方 Series Matrix 直接下载（本机无可用 R；数据源与 GEOquery 的 GSEMatrix 下载一致）
+下载到的文件名称：GSE29272_series_matrix.txt.gz
+文件路径：raw_data\GSE29272_series_matrix.txt.gz
+文件大小：27663216 字节
+SHA-256：8815674B91D2907572F796B4026770C1C8F11CDC8487A1E5243900164832F625
+验证结果：压缩流可完整读取；GPL96；268 个样本；22283 个表达探针行
+
+---
+
+平台编号：GPL570
+下载时间：2026-07-29 09:28:21 +08:00
+下载方式：R GEOquery::getGEO(AnnotGPL = TRUE)
+下载到的文件名称：GPL570.annot.gz
+文件路径：raw_data\GPL570.annot.gz
+文件大小：8471521 字节
+SHA-256：D7CD44352127B1E34F3A720EBEA86093EF255A38F1612A85A2962B71BDE8F394
+用途：GSE79973（GPL570）的探针ID到Gene Symbol转换
+
+平台编号：GPL96
+下载时间：2026-07-29 09:29:19 +08:00
+下载方式：R GEOquery::getGEO(AnnotGPL = TRUE)；GEOquery使用提交者SOFT平台注释
+下载到的文件名称：GPL96.soft.gz
+文件路径：raw_data\GPL96.soft.gz
+文件大小：46608806 字节
+SHA-256：34E01F9A175DC3927F8BD0F8301B164DCB6540BA26FFA360540AE597A360752C
+用途：GSE29272（GPL96）的探针ID到Gene Symbol转换
+
+---
+
+论文扩展验证数据（补充记录；UTF-8）
+
+数据集编号：GSE206785
+下载时间：2026-07-29 16:03:35 +08:00
+下载方式：NCBI GEO supplementary files 直接下载；下载后由R脚本读取并核对细胞条形码
+下载到的文件名称：GSE206785_metadata.txt.gz
+文件路径：raw_data\GSE206785_metadata.txt.gz
+文件大小：118418 字节
+SHA-256：E9019A23116E7A6C6B17FFECA989887B4374E814804FA328574A625590849AD4
+用途：作者提供的单细胞样本、患者、组织、主要细胞类型和上皮谱系注释
+
+数据集编号：GSE206785
+下载时间：2026-07-29 16:04:36 +08:00
+下载方式：NCBI GEO supplementary files 直接下载；下载后由R脚本验证为与metadata完全匹配的processed log1p表达矩阵
+下载到的文件名称：GSE206785_scgex.txt.gz
+文件路径：raw_data\GSE206785_scgex.txt.gz
+文件大小：247163920 字节
+SHA-256：0D9B51BAF814741C47273C747345BEE1291AE5056187968B09A22A54DF687EC7
+用途：111140个细胞的processed单细胞表达矩阵；本研究未将其表述为raw sequencing counts
+
+数据集编号：GSE19826
+下载时间：2026-07-29 16:04:40 +08:00
+下载方式：NCBI GEO官方Series Matrix直接下载；R GEOquery读取
+下载到的文件名称：GSE19826_series_matrix.txt.gz
+文件路径：raw_data\GSE19826_series_matrix.txt.gz
+文件大小：3387966 字节
+SHA-256：E79F990549CAEFBF77376BB4F10982A758776E7D5536A6898CB122297D49ED07
+用途：12对胃癌/邻近正常组织及3份额外未配对正常组织的processed表达矩阵和样本信息
+预处理说明：矩阵为未取对数的正值信号强度；在探针合并和验证前由R转换为log2(signal+1)

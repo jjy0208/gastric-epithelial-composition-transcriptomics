@@ -1,10 +1,10 @@
 cff-version: 1.2.0
 message: "If you use this code or derived source data, please cite the archived release and the associated manuscript."
-title: "Gastric epithelial composition-aware transcriptomics: code and source data"
+title: "Independent single-cell and spatial validation of a gastric cancer transcriptomic module: code and source data"
 type: software
-version: "1.0.0"
-date-released: "2026-07-29"
-doi: "10.5281/zenodo.21677618"
+version: "2.2.0"
+date-released: "2026-07-30"
+doi: "10.5281/zenodo.21677617"
 
 identifiers:
   - type: doi
@@ -15,7 +15,7 @@ identifiers:
     description: "Archived snapshot of version 1.0.0."
 
 repository-code: "https://github.com/jjy0208/gastric-epithelial-composition-transcriptomics"
-url: "https://doi.org/10.5281/zenodo.21677618"
+url: "https://doi.org/10.5281/zenodo.21677617"
 license: MIT
 
 authors:
@@ -38,12 +38,13 @@ keywords:
   - gastric cancer
   - bulk transcriptomics
   - single-cell RNA sequencing
+  - spatial transcriptomics
   - tissue composition
   - gene-expression module
   - GEO
   - reproducible research
 
 abstract: >-
-  Reproducible R code, processed gene-expression matrices, statistical outputs
-  and figure source data supporting a composition-aware reanalysis of paired
-  gastric cancer transcriptomic cohorts.
+  Reproducible R code and frozen derived outputs supporting a composition-aware
+  reanalysis of three paired bulk gastric cancer cohorts, two independent
+  single-cell cohorts, and one spatial transcriptomic cohort.

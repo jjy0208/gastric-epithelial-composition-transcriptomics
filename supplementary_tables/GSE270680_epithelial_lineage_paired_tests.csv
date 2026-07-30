@@ -1,0 +1,6 @@
+subCluster,paired_patients,mean_difference,ci_low,ci_high,paired_t_p,wilcoxon_p,paired_t_fdr
+Cancer_CEACAM6,1,,,,,,
+Chief_PGA3,0,,,,,,
+Endocrine_CHGA,2,,,,,,
+Enterocyte_FABP1,2,,,,,,
+Mucous_MUC5AC,4,-0.520367666862477,-1.05095029371004,0.0102149599850885,0.0524235527019797,0.100348246462291,0.0524235527019797

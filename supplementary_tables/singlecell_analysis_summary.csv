@@ -1,0 +1,16 @@
+metric,value
+cells,111140
+patients,24
+samples,48
+candidate_genes_available,72
+expression_metadata_mismatches,0
+log1p_integer_max_error,1.25435444715549e-05
+normal_epithelial_cells,5075
+tumor_epithelial_cells,2135
+eligible_complete_epithelial_pairs,10
+epithelial_score_mean_difference,-0.0141882460169732
+epithelial_score_paired_t_pvalue,0.906758050028064
+epithelial_score_paired_wilcoxon_pvalue,1
+lineage_adjusted_tissue_coefficient,0.0304747979368701
+lineage_adjusted_cluster_robust_se,0.0869084548023918
+lineage_adjusted_cluster_robust_pvalue,0.72878547314667
